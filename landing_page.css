@@ -1,0 +1,206 @@
+body {
+    background-color: #111;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    overflow: auto;
+    /* Enable scrolling */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    background-color: #111;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: linear-gradient(to bottom, #111 0%, #000 100%);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+header nav img {
+    height: 60px;
+    /* Adjust logo height as needed */
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav a:hover {
+    text-decoration: none;
+}
+
+header nav ul li:nth-child(4) a,
+header nav ul li:nth-child(5) a {
+    background-color: #f0544f;
+    /* Red color for buttons */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+}
+
+#login-button,
+#signup-button {
+    background-color: #f0544f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.info {
+    font-size: larger;
+}
+
+.neon-glow {
+    color: #fff;
+    text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #006eff, 0 0 20px #006eff, 0 0 25px #006eff;
+    animation: blue-neon-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #007bff, 0 0 10px #007bff, 0 0 15px #006eff, 0 0 20px #006eff, 0 0 25px #006eff;
+    }
+
+    to {
+        text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #006eff, 0 0 40px #006eff, 0 0 50px #006eff;
+    }
+}
+
+.about-body {
+    background-color: #111;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.signup {
+    background-color: #f0544f;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Styling for the hero section */
+.hero-container {
+    background-image: url("images/rock-crowd.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.target_audience {
+    font-size: larger;
+}
+
+#remix-button {
+    background-color: #f0544f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#about-button {
+    background-color: #f0544f;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.drums-image {
+    height: 390px;
+}
+
+.about-img {
+    height: 400px;
+}
+
+.about-background-image {
+    display: flex;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
